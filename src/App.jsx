@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   function onTaskClick(taskId) {
-    const newTasks = tasks.map((task) => {
+    const newTasks = tasks?.map((task) => {
       // PRECISO ATUALIZRA ESSA TAREFA
       if (task.id === taskId) {
         return { ...task, isCompleted: !task.isCompleted };
