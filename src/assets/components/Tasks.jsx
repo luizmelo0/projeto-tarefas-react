@@ -23,9 +23,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
           <Button onClick={() => onSeeDetailsClick(task)}>
             <ChevronRightIcon />
           </Button>
-          <Button
-            onClick={() => onDeleteTaskClick(task.id)}
-          >
+          <Button onClick={() => onDeleteTaskClick(task.id)}>
             <TrashIcon />
           </Button>
         </li>
